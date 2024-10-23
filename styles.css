@@ -1,0 +1,104 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+#item-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#item-form input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+#item-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#item-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#item-list li {
+    background-color: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    #item-form input {
+        margin-right: 0;
+    }
+    #item-form button {
+        margin-top: 10px;
+    }
+    #item-list li {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 576px) {
+    #item-form input {
+        width: 100%;
+    }
+    #item-form button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #item-list li {
+        padding: 5px;
+    }
+    .delete-btn {
+        padding: 3px 5px;
+    }
+}
